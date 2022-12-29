@@ -74,3 +74,32 @@ button:hover {
 .luxury {
     color: hsl(179, 100%, 13%);
 }
+
+/* MOBILE  */
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 290px;
+        height: 400px;
+        margin-top: 5%;
+        margin-left: -15%;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-item h3 {
+        font-size: 28px;
+    }
+
+    #sedan-grid {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+
+    #luxury-grid {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
+}
